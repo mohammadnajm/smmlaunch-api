@@ -72,7 +72,7 @@ class SmmlaunchApi {
     } catch (err) {
       const res = err.response;
       throw new Error(
-        `API error${res ? ` (${res.status})` : ""}: ${res?.data || err.message}`
+        `API error ${res}`
       );
     }
   }
